@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 13px 'Lato';
+	line-height: 24px;
+	background: #ffffff;
+	letter-spacing: 0.6px;
+}
+
+.clear {
+	clear: both;
+	height:50px;
+}
+
+#page-wrap {
+	width: 1000px;
+	margin: 40px auto 60px;
+}
+
+h1 {
+	margin: 0 0 16px 0;
+	padding: 0 0 16px 0;
+	font-size: 38px;
+	font-weight: lighter;
+	letter-spacing: 0.5px;
+	border-bottom: 1px solid #999;
+}
+
+a {
+	color: #999;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	color: black;
+}
+
+dt {
+	font-weight: bold;
+	font-size: 14px;
+	text-align: right;
+	width: 160px;
+	float: left;
+}
+
+dd {
+	width: 760px;
+	float: right;
+	padding: 0 0 0 26px;
+	border-left: 1px solid #999;
+
+}
+
+dd.clear {
+	float: none;
+	margin: 0;
+	height: 50px;
+	border-left: none;
+}
+
+img {
+	width: 200px;
+}
+
+img.profile {
+	width: 140px;
+}
+
+img.logo {
+	padding: 0px;
+	margin: 0px;
+	width: 30px;
+}
+
+td {
+	font-size: 11px;
+	line-height: 24px;
+	letter-spacing: 0.6px;
+	padding: 10px;
+}
+
+span.title {
+	font-size: 16px;
+/*	font-weight: bold;
+*/	line-height: 36px;
+}
+
+td.work {
+	font-size: 12px;
+	line-height: 10px;
+	letter-spacing: 0.6px;
+	padding: 0px;
+}
+
+.spacer {
+	height: 0px;
+}
+
+table {
+	width: 100%;
+}
