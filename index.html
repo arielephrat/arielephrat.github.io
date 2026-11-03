@@ -2,388 +2,944 @@
 <html lang="en">
 
 <head>
-  <title>Ariel Ephrat</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ariel Ephrat — Research Scientist, Google DeepMind</title>
+  <meta name="description" content="Ariel Ephrat is a Research Scientist at Google DeepMind working on large-scale generative video models (Genie, Veo, Lumiere), video understanding, and audio-visual perception." />
 
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ariel Ephrat — Research Scientist, Google DeepMind" />
+  <meta property="og:description" content="Research Scientist at Google DeepMind focusing on generative video models (Genie, Veo, Lumiere), multimodal perception, and real-world AI products." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arielephrat.github.io/" />
+  <meta property="og:image" content="https://arielephrat.github.io/images/ariel_profile_pic.jpg" />
+
+  <link rel="icon" type="image/webp" href="images/gdm_logo.webp" />
+
+  <!-- Typography: Newsreader (Editorial Display/Titles) + Inter (Body) + JetBrains Mono (Metadata) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" type="text/css" href="mystyle.css" />
 
- <!-- Google tag (gtag.js) -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7RBKC34V5"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
+  <!-- Theme initialization (prevents flash on load) -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || saved === 'light') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
 
-   gtag('config', 'G-C7RBKC34V5');
- </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7RBKC34V5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-C7RBKC34V5');
+  </script>
 </head>
 
 <body>
 
-<!-- Start of StatCounter Code for Default Guide -->
-  <script type="text/javascript">
-    var sc_project=11225963; 
-    var sc_invisible=1; 
-    var sc_security="29e62abb"; 
-    var scJsHost = (("https:" == document.location.protocol) ?
-    "https://secure." : "http://www.");
-    document.write("<sc"+"ript type='text/javascript' src='" +
-    scJsHost+
-    "statcounter.com/counter/counter.js'></"+"script>");
-    </script>
-    <noscript><div class="statcounter"><a title="real time web
-    analytics" href="http://statcounter.com/"
-    target="_blank"><img class="statcounter"
-    src="//c.statcounter.com/11225963/0/29e62abb/1/" alt="real
-    time web analytics"></a></div>
-  </noscript>
+  <!-- Sticky Editorial Header -->
+  <header class="site-nav" id="top-nav">
+    <div class="site-nav__inner">
+      <a href="#top" class="site-nav__brand" id="nav-brand">Ariel Ephrat</a>
+      <nav aria-label="Primary Navigation">
+        <ul class="site-nav__links">
+          <li><a href="#about" id="nav-about">About</a></li>
+          <li><a href="#highlights" id="nav-highlights">Highlights</a></li>
+          <li><a href="#publications" id="nav-publications">Publications</a></li>
+          <li><a href="#experience" id="nav-experience">Experience</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle-btn" type="button" aria-label="Toggle color theme" title="Switch light / dark theme">
+        <!-- Moon icon (shown in light mode) -->
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <!-- Sun icon (shown in dark mode) -->
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
 
-<div id="html-mobile-background"></div>
-<div id="page-wrap">
-  <dl>
-    <dd>
-      <table>
-        <tr>
-          <td class="profile">
-            <img class="profile" src="images/ariel_profile_pic.jpg">
-          </td>
-          <td class="heading">
-            <h1>Ariel Ephrat</h1>
-            Research Scientist, Google DeepMind <br />
-            Email: arielephrat_at_google.com <br />
-			
-            <a href = "http://scholar.google.co.il/citations?user=n4dxd1YAAAAJ&hl=en">Google Scholar</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;
-            <a href = "https://il.linkedin.com/in/arielephrat">Linkedin</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;
-            <a href = "https://github.com/arielephrat">Github</a>
-          </td>
-        </tr>
-      </table>
-    </dd>
-  </dl>
+  <main class="page-container" id="top">
 
-  <div class="clear"></div>
-  <dl>
-    <dt>About Me</dt>
-    <dd>
-		I'm a Research Scientist at <a href = "https://deepmind.google">Google DeepMind</a>, previously on the Perception Team at <a href = "https://ai.google/research/"> Google Research</a>,
-	    where I focus on turning generative AI and video understanding into real-world applications. </br>
-		</br>
-		My work combines academic research with practical impact, contributing to Google's large-scale generative video models: Genie, Veo and Lumiere, as well as product features such as
-		Best Take and Speech Mode for Pixel and YouTube Shorts AI effects, alongside notable papers. I completed my PhD in 2018,
-		working with <a href="http://www.cs.huji.ac.il/~peleg/">Prof. Shmuel Peleg</a> as part of the <a href = "https://vision.huji.ac.il/">HUJI Machine Perception Group</a>.</br>
-		<br />
-	    I’m also drawn to the business side of tech. I've advised <a href = "https://warburgpincus.com">Warburg Pincus</a> on computer vision investments, helping drive two deals,
-		and bring perspective from my time as a startup founder. My passion lies in how innovation and value creation come together. </br>
-    </dd>
-  </dl>
+    <!-- Hero Profile Section -->
+    <section class="hero" aria-label="Profile Summary">
+      <div class="hero__photo-wrap">
+        <img class="hero__photo" src="images/ariel_profile_pic.jpg" alt="Portrait of Ariel Ephrat" width="168" height="168" />
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__title">Ariel Ephrat</h1>
+        <p class="hero__role">Research Scientist, <a href="https://deepmind.google" target="_blank" rel="noopener">Google DeepMind</a></p>
+        <div class="hero__email-row">
+          <span id="email-display">arielephrat [at] google.com</span>
+          <button type="button" class="copy-email-btn" id="copy-email-btn" aria-label="Copy email address">
+            Copy email
+          </button>
+        </div>
+        <div class="hero__links">
+          <a class="social-pill" id="link-scholar" href="https://scholar.google.co.il/citations?user=n4dxd1YAAAAJ&hl=en" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            Google Scholar
+          </a>
+          <a class="social-pill" id="link-linkedin" href="https://il.linkedin.com/in/arielephrat" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+          <a class="social-pill" id="link-github" href="https://github.com/arielephrat" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <div class="clear"></div>
-  <dl>
-    <dt>Research & Product Highlights</dt>
-  
-			
-			
-  		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  			<tr>
-  				<td style="padding:2%;width:33%;vertical-align:middle">
-  					<a href="https://www.youtube.com/watch?v=PDKhUknuQDg">
-  				  <img src='images/genie.png' width="110%" height="auto">
-  					</a>
-  				</td>
-				
-  				<td style="padding:2%;width:33%;vertical-align:middle">
-  					<a href="https://www.youtube.com/watch?v=dsBzEOli-p0">
-  				  <img src='images/best_take.png' width="110%" height="auto">
-  					</a>
-  				</td>
-  				<td style="padding:2%;width:34%;vertical-align:middle">
-  				<a href="https://blog.research.google/2018/04/looking-to-listen-audio-visual-speech.html">
-  				  <img src='images/l2l_blog.png' width="110%" height="auto">
-  					</a>
-  				</td>
-  			</tr>
-  			<tr>
-  				<td style="padding:2%;width:33%;vertical-align:middle">
-  				  <a href="https://blog.google/products/pixel/snap-faster-hear-better-and-do-more-your-pixel/">
-  					<img src='images/ConvoMode_p6_3.gif' width="110%" height="auto"></a>
-				  
-  				</td>
-				
-  				<td style="padding:2%;width:33%;vertical-align:middle">
-  					<a href="https://blog.google/products/pixel/pixel-6s-camera-combines-hardware-software-and-ml/">
-  				  <img src='images/pixel6a.png' width="110%" height="auto">
-  					</a>
-  				</td>
-  				<td style="padding:2%;width:34%;vertical-align:middle">
-  				<a href="https://blog.research.google/2018/04/looking-to-listen-audio-visual-speech.html">
-  				  <img src='images/l2l_yt_blog.png' width="110%" height="auto">
-  					</a>
-  				</td>
-  		</tbody>
-  		</table>
-  </dl>
-  
-  <div class="clear"></div>
-  
-  <dl>
-    <dt>Publications</dt>
-    <dd>
-      <table>
-             <tr>
-              <td class="pub_img"><img width=5% src="images/tokenverse.png"></td>
-              <td class="pub_desc">
-                <span class="title">TokenVerse: Versatile Multi-concept Personalization <br />
- 				   in Token Modulation Space</span> <br />
-                D. Garibi, S. Yadin, R. Paiss, O. Tov, S. Zada, <b>A. Ephrat</b>, T. Michaeli, I. Mosseri, T. Dekel<br />
-                SIGGRAPH (Journal) 2025, <b>Best Paper award</b><br />
-                <a href = "https://arxiv.org/abs/2501.12224">arXiv</a>&nbsp;&nbsp;&nbsp;|
-                &nbsp;&nbsp;&nbsp;<a href = "https://token-verse.github.io">webpage</a>&nbsp;&nbsp;&nbsp;
-              </td>
-            </tr>
-            <tr class="spacer"><td></td></tr>
-			
-			<tr>
-             <td class="pub_img"><img width=5% src="images/still_moving.jpg"></td>
-             <td class="pub_desc">
-               <span class="title">Still-Moving: Customized Video Generation <br />
-				   without Customized Video Data</span> <br />
-               H. Chefer, S. Zada, R. Paiss, <b>A. Ephrat</b>, O. Tov,<br />
- 			   M. Rubinstein, L. Wolf, T. Dekel, T. Michaeli, I. Mosseri<br />
-               SIGGRAPH Asia (Journal) 2024<br />
-               <a href = "https://arxiv.org/abs/2407.08674">arXiv</a>&nbsp;&nbsp;&nbsp;|
-               &nbsp;&nbsp;&nbsp;<a href = "https://still-moving.github.io/">webpage</a>&nbsp;&nbsp;&nbsp;|
- 	          &nbsp;&nbsp;&nbsp;<a href = "https://www.youtube.com/watch?v=U7UuV_VIjnA">video</a>&nbsp;&nbsp;&nbsp;
-			  
-             </td>
-           </tr>
-           <tr class="spacer"><td></td></tr>
-		  
-           <tr>
-            <td class="pub_img"><img width=5% src="images/lumiere.gif"></td>
-            <td class="pub_desc">
-              <span class="title">Lumiere: A Space-Time Diffusion Model for Video Generation</span> <br />
-              O. Bar-Tal, H. Chefer, O. Tov, C. Herrmann, R. Paiss, S. Zada,<br />
-			  <b>A. Ephrat</b>, J. Hur, Y. Li, T. Michaeli, O. Wang, D. Sun, T. Dekel, I. Mosseri<br />
-              SIGGRAPH Asia, 2024<br />
-              <a href = "https://arxiv.org/abs/2401.12945">arXiv</a>&nbsp;&nbsp;&nbsp;|
-              &nbsp;&nbsp;&nbsp;<a href = "https://lumiere-video.github.io">webpage</a>&nbsp;&nbsp;&nbsp;|
-	          &nbsp;&nbsp;&nbsp;<a href = "https://www.youtube.com/watch?v=wxLr02Dz2Sc">video</a>&nbsp;&nbsp;&nbsp;
-			  
-            </td>
-          </tr>
-          <tr class="spacer"><td></td></tr>
-		  
-		  <tr>
-           <td class="pub_img"><img width=5% src="images/clip_count.png"></td>
-           <td class="pub_desc">
-             <span class="title">Teaching CLIP to Count to Ten</span> <br />
-             R. Paiss, <b>A. Ephrat</b>, O. Tov, S. Zada, I. Mosseri, M. Irani, T. Dekel<br />
-             ICCV 2023<br />
-             <a href = "https://arxiv.org/abs/2302.12066">arXiv</a>&nbsp;&nbsp;&nbsp;|
-             &nbsp;&nbsp;&nbsp;<a href = "https://teaching-clip-to-count.github.io">webpage</a>&nbsp;&nbsp;&nbsp;
-           </td>
-         </tr>
-         <tr class="spacer"><td></td></tr>
-		 
-		 <tr>
-          <td class="pub_img"><img width=5% src="images/speednet.png"></td>
-          <td class="pub_desc">
-            <span class="title">SpeedNet: Learning the Speediness in Videos</span> <br />
-            S. Benaim, <b>A. Ephrat</b>, O. Lang, I. Mosseri, W.T. Freeman, M. Rubinstein, M. Irani, T. Dekel<br />
-            CVPR 2020, <b>oral</b><br />
-            <a href = "https://arxiv.org/abs/2004.06130">arXiv</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;&nbsp;<a href = "http://speednet-cvpr20.github.io/">webpage</a>&nbsp;&nbsp;&nbsp;
-          </td>
-        </tr>
-        <tr class="spacer"><td></td></tr>
-
-         <tr>
-          <td class="pub_img"><img width=5% src="images/icml19.png"></td>
-          <td class="pub_desc">
-            <span class="title">Neural Separation of Observed and Unobserved Distributions</span> <br />
-            T. Halperin, <b>A. Ephrat</b>, Y. Hoshen <br />
-            ICML 2019<br />
-            <a href = "https://arxiv.org/abs/1811.12739">arXiv</a>&nbsp;&nbsp;&nbsp;
-          </td>
-        </tr>
-        <tr class="spacer"><td></td></tr>
-
-        <tr>
-          <td class="pub_img"><img width=5% src="images/avsnap.png"></td>
-          <td class="pub_desc">
-            <span class="title">Dynamic Temporal Alignment of Speech to Lips</span> <br />
-            T. Halperin*, <b>A. Ephrat*</b>, S. Peleg <br />
-            [* equal contribution] <br />
-            ICASSP 2019<br />
-            <a href = "http://arxiv.org/abs/1808.06250">arXiv</a>&nbsp;&nbsp;&nbsp;|
-	    &nbsp;&nbsp;&nbsp;<a href = "https://www.youtube.com/watch?v=t7m0yEnBG7M">video</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;&nbsp;<a href = "https://github.com/tavihalperin/AV-snap">code</a>&nbsp;&nbsp;
-          </td>
-        </tr>
-        <tr class="spacer"><td></td></tr>
-
-	<tr>
-          <td class="pub_img"><img width=5% src="images/l2l_2.png"></td>
-          <td class="pub_desc">
-            <span class="title">Looking to Listen at the Cocktail Party: <br />
-						A Speaker-Independent Audio-Visual Model for Speech Separation</span> <br />
-            <b>A. Ephrat</b>, I. Mosseri, O. Lang, T. Dekel, K. Wilson, A. Hassidim, W.T. Freeman, M. Rubinstein <br />
-            SIGGRAPH 2018<br />
-            <a href = "http://arxiv.org/abs/1804.03619">arXiv</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;&nbsp;<a href = "http://looking-to-listen.github.io/">webpage</a>&nbsp;&nbsp;&nbsp;|
-						&nbsp;&nbsp;&nbsp;<a href = "https://www.youtube.com/watch?v=rVQVAPiJWKU">video</a>&nbsp;&nbsp;&nbsp;|
-						&nbsp;&nbsp;&nbsp;<a href = "https://research.googleblog.com/2018/04/looking-to-listen-audio-visual-speech.html">Google Research Blog</a>&nbsp;&nbsp;&nbsp;
-          </td>
-        </tr>
-        <tr class="spacer"><td></td></tr>
-
-				<tr>
-          <td class="pub_img"><img width=5% src="images/icassp18.png"></td>
-          <td class="pub_desc">
-            <span class="title">Seeing Through Noise: <br />
-						Visually Driven Speaker Separation and Enhancement</span> <br />
-            A. Gabbay, <b>A. Ephrat</b>, T. Halperin and S. Peleg <br />
-            IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2018<br />
-            <a href = "https://arxiv.org/abs/1708.06767">arXiv</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;&nbsp;<a href = "http://www.vision.huji.ac.il/speaker-separation/">webpage</a>&nbsp;&nbsp;&nbsp;|
-						&nbsp;&nbsp;&nbsp;<a href = "https://www.youtube.com/watch?v=qmsyj7vAzoI">video</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;&nbsp;<a href = "https://github.com/avivga/cocktail-party">code</a>
-          </td>
-        </tr>
-        <tr class="spacer"><td></td></tr>
-
-				<tr>
-          <td class="pub_img"><img src="images/livercnn18.png"></td>
-          <td class="pub_desc">
-            <span class="title">Patient-specific and global convolutional neural networks <br />
-						for robust automatic liver tumor delineation in follow-up CT studies</span> <br />
-            R. Vivanti, L. Joskowicz, N. Lev Cohain, <b>A. Ephrat</b> and J. Sosna <br />
-            Medical & Biological Engineering & Computing, March 2018 <br />
-            <a href = "https://link.springer.com/article/10.1007/s11517-018-1803-6">article</a>
-          </td>
-        </tr>
-				<tr class="spacer"><td></td></tr>
-
-        <tr>
-          <td class="pub_img"><img src="images/enc_dec_fig_crop.png"></td>
-          <td class="pub_desc">
-            <span class="title">Improved Speech Reconstruction from Silent Video</span> <br />
-            <b>A. Ephrat*</b>, T. Halperin* and S. Peleg <br />
-            [* equal contribution] <br />
-            ICCV 2017 Workshop on Computer Vision for Audio-Visual Media<br />
-            <a href = "https://arxiv.org/abs/1708.01204">arXiv</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;&nbsp;<a href = "http://www.vision.huji.ac.il/vid2speech">webpage</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;&nbsp;<a href = "https://www.youtube.com/watch?v=Xjbn7h7tpg0">video</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;&nbsp;<a href = "https://github.com/arielephrat/vid2speech">code</a>
-          </td>
-        </tr>
-        <tr class="spacer"><td></td></tr>
-
-        <tr>
-          <td class="pub_img"><img src="images/vid2speech.png"></td>
-          <td class="pub_desc">
-            <span class="title">Vid2speech: Speech Reconstruction from Silent Video</span> <br />
-            <b>A. Ephrat</b> and S. Peleg <br />
-            IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2017<br />
-            <a href = "./papers/vid2speech_icassp17.pdf">pdf</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;&nbsp;<a href = "http://www.vision.huji.ac.il/vid2speech">webpage</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;&nbsp;<a href = "https://github.com/arielephrat/vid2speech">code</a>
-          </td>
-        </tr>
-        <tr class="spacer"><td></td></tr>
-
-        <tr>
-          <td class="pub_img"><img src="images/compactcnn.png"></td>
-          <td class="pub_desc">
-            <span class="title">Compact CNN for Indexing Egocentric Videos</span> <br />
-            Y. Poleg, <b>A. Ephrat</b>, C. Arora and S. Peleg <br />
-            IEEE Winter Conference on Applications of Computer Vision (WACV), 2016 <br />
-            <a href = "./papers/compactcnn_wacv16.pdf">pdf</a>&nbsp;&nbsp;&nbsp;|
-            &nbsp;&nbsp;&nbsp;<a href = "http://www.vision.huji.ac.il/egoseg">webpage</a>
-          </td>
-        </tr>
-        <tr class="spacer"><td></td></tr>
-
-        <tr>
-          <td class="pub_img"><img src="images/livercnn15.png"></td>
-          <td class="pub_desc">
-            <span class="title">Automatic Liver Tumor Segmentation in Follow-Up CT Scans</span> <br />
-            R. Vivanti, <b>A. Ephrat</b>, L. Joskowicz, O.A. Karaaslan, N. Lev Cohain and J. Sosna <br />
-            Proc. International Workshop on Patch-based Techniques in Medical Imaging, MICCAI, 2015 <br />
-            <a href = "./papers/livercnn_miccai15.pdf">pdf</a>
-          </td>
-        </tr>
-      </table>
-    </dd>
-  </dl>
-
-  <div class="clear"></div>
-
-  <dl>
-    <dt>Teaching</dt>
-    <dd>
-      <table>
-        <tr>
-          <td><img class="logo" src="images/huji-logo.png"></td>
-          <td class="work">
-						HUJI &#8212; Teaching Assistant, Digital Image Processing, 2017-18 <br />
-            HUJI &#8212; Teaching Assistant, Undergraduate Engineering Projects and Workshop, 2015-18 
-          </td>
-          <td>
-        </tr>
-      </table>
-    </dd>
-  </dl>
-
-  <div class="clear"></div>
-
-  <dl>
-    <dt>Work</dt>
-    <dd>
-      <table>
-        <tr>
-          <td><img class="logo" src="images/gdm_logo.webp"></td>
-          <td class="work">
-            Google DeepMind &#8212; Research Scientist, 2024 - Now <br />
-          </td>
-          <td>
-        </tr>
-		<tr>
-          <td><img class="logo" src="images/google_g_logo.png"></td>
-          <td class="work">
-            Google Research &#8212; Software Engineer, 2018 - 2024 <br />
-			Google Research &#8212; Software Engineering Intern, 2017 <br />
-            Google &#8212; Software Engineering Intern, 2016
-          </td>
-          <td>
-        </tr>
-        <tr>
-          <td><img class="logo" src="images/hereastory_logo.png"></td>
-          <td class="work">
-            <a href = "http://www.here-a-story.com" target="_blank">Here a Story</a> &#8212; Co-founder and Web Developer, 2013&#8211;2014
-          </td>
-          <td>
-        </tr>
-      </table>
-    </dd>
-     <td>
-        <br>
-        <!-- <p align="left"> -->
-        <font size="1">
-   		 Research and product highlights inspired by <a href="https://inbar-mosseri.github.io/">Inbar Mosseri</a>
-         </font>
+    <!-- 01. About Me -->
+    <section class="section" id="about" aria-labelledby="heading-about">
+      <div class="section-header">
+        <div class="section-title-group">
+          <span class="section-numeral">01</span>
+          <h2 class="section-title" id="heading-about">About Me</h2>
+        </div>
+      </div>
+      <div class="bio-prose">
+        <p>
+          I'm a Research Scientist at <a href="https://deepmind.google" target="_blank" rel="noopener">Google DeepMind</a>, previously on the Perception Team at <a href="https://ai.google/research/" target="_blank" rel="noopener">Google Research</a>, where I focus on turning generative AI and video understanding into real-world applications.
         </p>
-    </td>
-  </dl>
+        <p>
+          My work combines academic research with practical impact, contributing to Google's large-scale generative video models: <strong>Genie</strong>, <strong>Veo</strong>, and <strong>Lumiere</strong>, as well as product features such as <strong>Best Take</strong> and <strong>Speech Mode</strong> for Pixel and YouTube Shorts AI effects, alongside notable papers. I completed my PhD in 2018, working with <a href="https://www.cs.huji.ac.il/~peleg/" target="_blank" rel="noopener">Prof. Shmuel Peleg</a> as part of the <a href="https://vision.huji.ac.il/" target="_blank" rel="noopener">HUJI Machine Perception Group</a>.
+        </p>
+        <p>
+          I'm also drawn to the business side of tech. I've advised <a href="https://warburgpincus.com" target="_blank" rel="noopener">Warburg Pincus</a> on computer vision investments, helping drive two deals, and bring perspective from my time as a startup founder. My passion lies in how innovation and value creation come together.
+        </p>
+      </div>
+    </section>
 
-  <div class="clear"></div>
+    <!-- 02. Research & Product Highlights -->
+    <section class="section" id="highlights" aria-labelledby="heading-highlights">
+      <div class="section-header">
+        <div class="section-title-group">
+          <span class="section-numeral">02</span>
+          <h2 class="section-title" id="heading-highlights">Research &amp; Product Highlights</h2>
+        </div>
+      </div>
 
-</div>
+      <div class="highlights-grid">
+        <!-- Card 1: Genie 4 -->
+        <a class="highlight-card" id="highlight-genie4" href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/" target="_blank" rel="noopener">
+          <div class="highlight-card__media">
+            <img src="images/genie4.gif" alt="Genie 4 real-time interactive world simulation with native audio" loading="lazy" />
+          </div>
+          <div class="highlight-card__body">
+            <span class="highlight-card__kicker">Google DeepMind · World Models</span>
+            <h3 class="highlight-card__title">
+              <span>Genie 4</span>
+              <span class="highlight-card__arrow" aria-hidden="true">&#8599;</span>
+            </h3>
+            <p class="highlight-card__desc">Real-time interactive world simulation with native audio, physics, and language steering.</p>
+          </div>
+        </a>
+
+        <!-- Card 2: Genie 3 -->
+        <a class="highlight-card" id="highlight-genie" href="https://www.youtube.com/watch?v=PDKhUknuQDg" target="_blank" rel="noopener">
+          <div class="highlight-card__media">
+            <img src="images/genie3.gif" alt="Genie 3 interactive world model demonstration" loading="lazy" />
+          </div>
+          <div class="highlight-card__body">
+            <span class="highlight-card__kicker">Google DeepMind · World Models</span>
+            <h3 class="highlight-card__title">
+              <span>Genie 3</span>
+              <span class="highlight-card__arrow" aria-hidden="true">&#8599;</span>
+            </h3>
+            <p class="highlight-card__desc">Real-time interactive general-purpose world models generated from prompts.</p>
+          </div>
+        </a>
+
+        <!-- Card 3: Pixel Best Take -->
+        <a class="highlight-card" id="highlight-best-take" href="https://www.youtube.com/watch?v=dsBzEOli-p0" target="_blank" rel="noopener">
+          <div class="highlight-card__media">
+            <img src="images/best_take.gif" alt="Google Pixel Best Take feature combining expressions" loading="lazy" />
+          </div>
+          <div class="highlight-card__body">
+            <span class="highlight-card__kicker">Google Pixel · Product</span>
+            <h3 class="highlight-card__title">
+              <span>Pixel Best Take</span>
+              <span class="highlight-card__arrow" aria-hidden="true">&#8599;</span>
+            </h3>
+            <p class="highlight-card__desc">Blending the best expressions across burst shots into a single natural group photo.</p>
+          </div>
+        </a>
+
+        <!-- Card 4: Speech Mode on Pixel -->
+        <a class="highlight-card" id="highlight-speech-mode" href="https://blog.google/products/pixel/snap-faster-hear-better-and-do-more-your-pixel/" target="_blank" rel="noopener">
+          <div class="highlight-card__media">
+            <img src="images/ConvoMode_p6_3.gif" alt="Pixel Speech Enhancement mode on device" loading="lazy" />
+          </div>
+          <div class="highlight-card__body">
+            <span class="highlight-card__kicker">Google Pixel · Feature Drop</span>
+            <h3 class="highlight-card__title">
+              <span>Pixel Speech Mode</span>
+              <span class="highlight-card__arrow" aria-hidden="true">&#8599;</span>
+            </h3>
+            <p class="highlight-card__desc">On-device audio-visual speech enhancement isolating voices in noisy environments.</p>
+          </div>
+        </a>
+
+        <!-- Card 5: YouTube Audiovisual Speech Enhancement -->
+        <a class="highlight-card" id="highlight-youtube-av" href="https://research.google/blog/audiovisual-speech-enhancement-in-youtube-stories/" target="_blank" rel="noopener">
+          <div class="highlight-card__media highlight-card__media--crop-card">
+            <img src="images/l2l_yt_blog.png" alt="Audiovisual speech enhancement in YouTube" loading="lazy" />
+          </div>
+          <div class="highlight-card__body">
+            <span class="highlight-card__kicker">YouTube &amp; Google Research</span>
+            <h3 class="highlight-card__title">
+              <span>YouTube Speech Enhancement</span>
+              <span class="highlight-card__arrow" aria-hidden="true">&#8599;</span>
+            </h3>
+            <p class="highlight-card__desc">Real-time mobile audiovisual speech enhancement deployed to YouTube creators.</p>
+          </div>
+        </a>
+
+        <!-- Card 6: Looking to Listen -->
+        <a class="highlight-card" id="highlight-l2l" href="https://blog.research.google/2018/04/looking-to-listen-audio-visual-speech.html" target="_blank" rel="noopener">
+          <div class="highlight-card__media highlight-card__media--crop-card">
+            <img src="images/l2l_blog.png" alt="Looking to Listen audio-visual speech separation demo" loading="lazy" />
+          </div>
+          <div class="highlight-card__body">
+            <span class="highlight-card__kicker">Google Research · SIGGRAPH</span>
+            <h3 class="highlight-card__title">
+              <span>Looking to Listen</span>
+              <span class="highlight-card__arrow" aria-hidden="true">&#8599;</span>
+            </h3>
+            <p class="highlight-card__desc">Speaker-independent audio-visual speech separation in cocktail-party scenes.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 03. Publications -->
+    <section class="section" id="publications" aria-labelledby="heading-publications">
+      <div class="section-header">
+        <div class="section-title-group">
+          <span class="section-numeral">03</span>
+          <h2 class="section-title" id="heading-publications">Publications</h2>
+        </div>
+
+        <div class="pub-filters" role="tablist" aria-label="Filter publications by topic">
+          <button type="button" class="filter-btn active" data-filter="all" id="filter-all">All (14)</button>
+          <button type="button" class="filter-btn" data-filter="generative" id="filter-generative">Generative AI &amp; Vision</button>
+          <button type="button" class="filter-btn" data-filter="audiovisual" id="filter-audiovisual">Audio-Visual &amp; Speech</button>
+          <button type="button" class="filter-btn" data-filter="medical" id="filter-medical">Medical &amp; Egocentric</button>
+        </div>
+      </div>
+
+      <div class="pub-list" id="pub-list">
+
+        <!-- 1. TokenVerse (2025) -->
+        <article class="pub-item" data-category="generative">
+          <div class="pub-thumb">
+            <img src="images/tokenverse.png" alt="TokenVerse multi-concept personalization visual" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">TokenVerse: Versatile Multi-concept Personalization in Token Modulation Space</h3>
+            <p class="pub-authors">
+              D. Garibi, S. Yadin, R. Paiss, O. Tov, S. Zada, <span class="me">A. Ephrat</span>, T. Michaeli, I. Mosseri, T. Dekel
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">SIGGRAPH (Journal) 2025</span>
+              <span class="award-badge">Best Paper Award</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/2501.12224" target="_blank" rel="noopener">arXiv</a>
+              <a class="pub-link" href="https://token-verse.github.io" target="_blank" rel="noopener">Project Page</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-tokenverse">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-tokenverse" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@article{garibi2025tokenverse,
+  title={TokenVerse: Versatile Multi-concept Personalization in Token Modulation Space},
+  author={Garibi, Daniel and Yadin, Shahar and Paiss, Roni and Tov, Omer and Zada, Shiran and Ephrat, Ariel and Michaeli, Tomer and Mosseri, Inbar and Dekel, Tali},
+  journal={ACM Transactions on Graphics (SIGGRAPH)},
+  year={2025}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Still-Moving (2024) -->
+        <article class="pub-item" data-category="generative">
+          <div class="pub-thumb">
+            <img src="images/still_moving.jpg" alt="Still-Moving customized video generation visual" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Still-Moving: Customized Video Generation without Customized Video Data</h3>
+            <p class="pub-authors">
+              H. Chefer, S. Zada, R. Paiss, <span class="me">A. Ephrat</span>, O. Tov, M. Rubinstein, L. Wolf, T. Dekel, T. Michaeli, I. Mosseri
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">SIGGRAPH Asia (Journal) 2024</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/2407.08674" target="_blank" rel="noopener">arXiv</a>
+              <a class="pub-link" href="https://still-moving.github.io/" target="_blank" rel="noopener">Project Page</a>
+              <a class="pub-link" href="https://www.youtube.com/watch?v=U7UuV_VIjnA" target="_blank" rel="noopener">Video</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-stillmoving">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-stillmoving" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@article{chefer2024stillmoving,
+  title={Still-Moving: Customized Video Generation without Customized Video Data},
+  author={Chefer, Hila and Zada, Shiran and Paiss, Roni and Ephrat, Ariel and Tov, Omer and Rubinstein, Michael and Wolf, Lior and Dekel, Tali and Michaeli, Tomer and Mosseri, Inbar},
+  journal={ACM Transactions on Graphics (SIGGRAPH Asia)},
+  year={2024}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Lumiere (2024) -->
+        <article class="pub-item" data-category="generative">
+          <div class="pub-thumb">
+            <img src="images/lumiere.gif" alt="Lumiere space-time diffusion video generation" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Lumiere: A Space-Time Diffusion Model for Video Generation</h3>
+            <p class="pub-authors">
+              O. Bar-Tal, H. Chefer, O. Tov, C. Herrmann, R. Paiss, S. Zada, <span class="me">A. Ephrat</span>, J. Hur, Y. Li, T. Michaeli, O. Wang, D. Sun, T. Dekel, I. Mosseri
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">SIGGRAPH Asia 2024</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/2401.12945" target="_blank" rel="noopener">arXiv</a>
+              <a class="pub-link" href="https://lumiere-video.github.io" target="_blank" rel="noopener">Project Page</a>
+              <a class="pub-link" href="https://www.youtube.com/watch?v=wxLr02Dz2Sc" target="_blank" rel="noopener">Video</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-lumiere">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-lumiere" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@inproceedings{bartal2024lumiere,
+  title={Lumiere: A Space-Time Diffusion Model for Video Generation},
+  author={Bar-Tal, Omer and Chefer, Hila and Tov, Omer and Herrmann, Charles and Paiss, Roni and Zada, Shiran and Ephrat, Ariel and Hur, Junhwa and Li, Yuanzhen and Michaeli, Tomer and Wang, Oliver and Sun, Deqing and Dekel, Tali and Mosseri, Inbar},
+  booktitle={SIGGRAPH Asia Conference Papers},
+  year={2024}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Teaching CLIP to Count to Ten (2023) -->
+        <article class="pub-item" data-category="generative">
+          <div class="pub-thumb pub-thumb--contain">
+            <img src="images/clip_count.png" alt="Teaching CLIP to Count to Ten diagram" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Teaching CLIP to Count to Ten</h3>
+            <p class="pub-authors">
+              R. Paiss, <span class="me">A. Ephrat</span>, O. Tov, S. Zada, I. Mosseri, M. Irani, T. Dekel
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">ICCV 2023</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/2302.12066" target="_blank" rel="noopener">arXiv</a>
+              <a class="pub-link" href="https://teaching-clip-to-count.github.io" target="_blank" rel="noopener">Project Page</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-clipcount">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-clipcount" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@inproceedings{paiss2023teaching,
+  title={Teaching CLIP to Count to Ten},
+  author={Paiss, Roni and Ephrat, Ariel and Tov, Omer and Zada, Shiran and Mosseri, Inbar and Irani, Michal and Dekel, Tali},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2023}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. SpeedNet (2020) -->
+        <article class="pub-item" data-category="generative">
+          <div class="pub-thumb pub-thumb--contain">
+            <img src="images/speednet.png" alt="SpeedNet learning speediness in videos" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">SpeedNet: Learning the Speediness in Videos</h3>
+            <p class="pub-authors">
+              S. Benaim, <span class="me">A. Ephrat</span>, O. Lang, I. Mosseri, W.T. Freeman, M. Rubinstein, M. Irani, T. Dekel
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">CVPR 2020</span>
+              <span class="award-badge">Oral</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/2004.06130" target="_blank" rel="noopener">arXiv</a>
+              <a class="pub-link" href="https://speednet-cvpr20.github.io/" target="_blank" rel="noopener">Project Page</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-speednet">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-speednet" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@inproceedings{benaim2020speednet,
+  title={SpeedNet: Learning the Speediness in Videos},
+  author={Benaim, Sagie and Ephrat, Ariel and Lang, Oran and Mosseri, Inbar and Freeman, William T and Rubinstein, Michael and Irani, Michal and Dekel, Tali},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2020}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Neural Separation of Observed and Unobserved Distributions (2019) -->
+        <article class="pub-item" data-category="generative">
+          <div class="pub-thumb pub-thumb--contain">
+            <img src="images/icml19.png" alt="Neural separation of observed and unobserved distributions" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Neural Separation of Observed and Unobserved Distributions</h3>
+            <p class="pub-authors">
+              T. Halperin, <span class="me">A. Ephrat</span>, Y. Hoshen
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">ICML 2019</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/1811.12739" target="_blank" rel="noopener">arXiv</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-icml19">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-icml19" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@inproceedings{halperin2019neural,
+  title={Neural Separation of Observed and Unobserved Distributions},
+  author={Halperin, Tavi and Ephrat, Ariel and Hoshen, Yedid},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2019}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Dynamic Temporal Alignment of Speech to Lips (2019) -->
+        <article class="pub-item" data-category="audiovisual">
+          <div class="pub-thumb pub-thumb--contain">
+            <img src="images/avsnap.png" alt="Dynamic temporal alignment of speech to lips" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Dynamic Temporal Alignment of Speech to Lips</h3>
+            <p class="pub-authors">
+              T. Halperin*, <span class="me">A. Ephrat*</span>, S. Peleg <span class="pub-equal-note">(* equal contribution)</span>
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">ICASSP 2019</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/1808.06250" target="_blank" rel="noopener">arXiv</a>
+              <a class="pub-link" href="https://www.youtube.com/watch?v=t7m0yEnBG7M" target="_blank" rel="noopener">Video</a>
+              <a class="pub-link" href="https://github.com/tavihalperin/AV-snap" target="_blank" rel="noopener">Code</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-avsnap">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-avsnap" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@inproceedings{halperin2019dynamic,
+  title={Dynamic Temporal Alignment of Speech to Lips},
+  author={Halperin, Tavi and Ephrat, Ariel and Peleg, Shmuel},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year={2019}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Looking to Listen at the Cocktail Party (2018) -->
+        <article class="pub-item" data-category="audiovisual">
+          <div class="pub-thumb pub-thumb--contain">
+            <img src="images/l2l_2.png" alt="Looking to Listen at the Cocktail Party architecture" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Looking to Listen at the Cocktail Party: A Speaker-Independent Audio-Visual Model for Speech Separation</h3>
+            <p class="pub-authors">
+              <span class="me">A. Ephrat</span>, I. Mosseri, O. Lang, T. Dekel, K. Wilson, A. Hassidim, W.T. Freeman, M. Rubinstein
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">SIGGRAPH 2018</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/1804.03619" target="_blank" rel="noopener">arXiv</a>
+              <a class="pub-link" href="https://looking-to-listen.github.io/" target="_blank" rel="noopener">Project Page</a>
+              <a class="pub-link" href="https://www.youtube.com/watch?v=rVQVAPiJWKU" target="_blank" rel="noopener">Video</a>
+              <a class="pub-link" href="https://blog.research.google/2018/04/looking-to-listen-audio-visual-speech.html" target="_blank" rel="noopener">Google Research Blog</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-l2l">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-l2l" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@article{ephrat2018looking,
+  title={Looking to Listen at the Cocktail Party: A Speaker-Independent Audio-Visual Model for Speech Separation},
+  author={Ephrat, Ariel and Mosseri, Inbar and Lang, Oran and Dekel, Tali and Wilson, Kevin and Hassidim, Avinatan and Freeman, William T and Rubinstein, Michael},
+  journal={ACM Transactions on Graphics (SIGGRAPH)},
+  volume={37},
+  number={4},
+  year={2018}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Seeing Through Noise (2018) -->
+        <article class="pub-item" data-category="audiovisual">
+          <div class="pub-thumb pub-thumb--contain">
+            <img src="images/icassp18.png" alt="Seeing Through Noise visually driven speaker separation" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Seeing Through Noise: Visually Driven Speaker Separation and Enhancement</h3>
+            <p class="pub-authors">
+              A. Gabbay, <span class="me">A. Ephrat</span>, T. Halperin, S. Peleg
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">IEEE ICASSP 2018</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/1708.06767" target="_blank" rel="noopener">arXiv</a>
+              <a class="pub-link" href="https://www.vision.huji.ac.il/speaker-separation/" target="_blank" rel="noopener">Project Page</a>
+              <a class="pub-link" href="https://www.youtube.com/watch?v=qmsyj7vAzoI" target="_blank" rel="noopener">Video</a>
+              <a class="pub-link" href="https://github.com/avivga/cocktail-party" target="_blank" rel="noopener">Code</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-icassp18">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-icassp18" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@inproceedings{gabbay2018seeing,
+  title={Seeing Through Noise: Visually Driven Speaker Separation and Enhancement},
+  author={Gabbay, Aviv and Ephrat, Ariel and Halperin, Tavi and Peleg, Shmuel},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year={2018}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. Patient-specific CNNs for Liver Tumor Delineation (2018) -->
+        <article class="pub-item" data-category="medical">
+          <div class="pub-thumb">
+            <img src="images/livercnn18.png" alt="Automatic liver tumor delineation in follow-up CT studies" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Patient-specific and Global Convolutional Neural Networks for Robust Automatic Liver Tumor Delineation in Follow-up CT Studies</h3>
+            <p class="pub-authors">
+              R. Vivanti, L. Joskowicz, N. Lev Cohain, <span class="me">A. Ephrat</span>, J. Sosna
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">Medical &amp; Biological Engineering &amp; Computing, March 2018</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://link.springer.com/article/10.1007/s11517-018-1803-6" target="_blank" rel="noopener">Article</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-liver18">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-liver18" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@article{vivanti2018patient,
+  title={Patient-specific and global convolutional neural networks for robust automatic liver tumor delineation in follow-up CT studies},
+  author={Vivanti, Refael and Joskowicz, Leo and Lev Cohain, Naama and Ephrat, Ariel and Sosna, Jacob},
+  journal={Medical \& Biological Engineering \& Computing},
+  volume={56},
+  number={9},
+  pages={1699--1713},
+  year={2018}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. Improved Speech Reconstruction from Silent Video (2017) -->
+        <article class="pub-item" data-category="audiovisual">
+          <div class="pub-thumb pub-thumb--contain">
+            <img src="images/enc_dec_fig_crop.png" alt="Improved speech reconstruction from silent video" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Improved Speech Reconstruction from Silent Video</h3>
+            <p class="pub-authors">
+              <span class="me">A. Ephrat*</span>, T. Halperin*, S. Peleg <span class="pub-equal-note">(* equal contribution)</span>
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">ICCV 2017 Workshop on Computer Vision for Audio-Visual Media</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/1708.01204" target="_blank" rel="noopener">arXiv</a>
+              <a class="pub-link" href="https://www.vision.huji.ac.il/vid2speech" target="_blank" rel="noopener">Project Page</a>
+              <a class="pub-link" href="https://www.youtube.com/watch?v=Xjbn7h7tpg0" target="_blank" rel="noopener">Video</a>
+              <a class="pub-link" href="https://github.com/arielephrat/vid2speech" target="_blank" rel="noopener">Code</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-iccvw17">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-iccvw17" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@inproceedings{ephrat2017improved,
+  title={Improved Speech Reconstruction from Silent Video},
+  author={Ephrat, Ariel and Halperin, Tavi and Peleg, Shmuel},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision Workshops (ICCVW)},
+  year={2017}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. Vid2speech (2017) -->
+        <article class="pub-item" data-category="audiovisual">
+          <div class="pub-thumb pub-thumb--contain">
+            <img src="images/vid2speech.png" alt="Vid2speech speech reconstruction from silent video" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Vid2speech: Speech Reconstruction from Silent Video</h3>
+            <p class="pub-authors">
+              <span class="me">A. Ephrat</span>, S. Peleg
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">IEEE ICASSP 2017</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="./papers/vid2speech_icassp17.pdf" target="_blank" rel="noopener">PDF</a>
+              <a class="pub-link" href="https://www.vision.huji.ac.il/vid2speech" target="_blank" rel="noopener">Project Page</a>
+              <a class="pub-link" href="https://github.com/arielephrat/vid2speech" target="_blank" rel="noopener">Code</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-vid2speech">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-vid2speech" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@inproceedings{ephrat2017vid2speech,
+  title={Vid2speech: Speech Reconstruction from Silent Video},
+  author={Ephrat, Ariel and Peleg, Shmuel},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={5095--5099},
+  year={2017}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 13. Compact CNN for Indexing Egocentric Videos (2016) -->
+        <article class="pub-item" data-category="medical">
+          <div class="pub-thumb pub-thumb--contain">
+            <img src="images/compactcnn.png" alt="Compact CNN for indexing egocentric videos" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Compact CNN for Indexing Egocentric Videos</h3>
+            <p class="pub-authors">
+              Y. Poleg, <span class="me">A. Ephrat</span>, C. Arora, S. Peleg
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">IEEE WACV 2016</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="./papers/compactcnn_wacv16.pdf" target="_blank" rel="noopener">PDF</a>
+              <a class="pub-link" href="https://www.vision.huji.ac.il/egoseg" target="_blank" rel="noopener">Project Page</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-compactcnn">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-compactcnn" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@inproceedings{poleg2016compact,
+  title={Compact CNN for Indexing Egocentric Videos},
+  author={Poleg, Yair and Ephrat, Ariel and Arora, Chetan and Peleg, Shmuel},
+  booktitle={IEEE Winter Conference on Applications of Computer Vision (WACV)},
+  year={2016}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- 14. Automatic Liver Tumor Segmentation in Follow-Up CT Scans (2015) -->
+        <article class="pub-item" data-category="medical">
+          <div class="pub-thumb">
+            <img src="images/livercnn15.png" alt="Automatic liver tumor segmentation in follow-up CT scans" loading="lazy" />
+          </div>
+          <div class="pub-meta">
+            <h3 class="pub-title">Automatic Liver Tumor Segmentation in Follow-Up CT Scans</h3>
+            <p class="pub-authors">
+              R. Vivanti, <span class="me">A. Ephrat</span>, L. Joskowicz, O.A. Karaaslan, N. Lev Cohain, J. Sosna
+            </p>
+            <div class="pub-venue-row">
+              <span class="pub-venue">MICCAI Workshop on Patch-based Techniques in Medical Imaging, 2015</span>
+            </div>
+            <div class="pub-links">
+              <a class="pub-link" href="./papers/livercnn_miccai15.pdf" target="_blank" rel="noopener">PDF</a>
+              <button type="button" class="pub-link bibtex-toggle" data-bib="bib-liver15">BibTeX</button>
+            </div>
+            <div class="bibtex-drawer" id="bib-liver15" hidden>
+              <button type="button" class="bibtex-copy-btn">Copy</button>
+              <pre>@inproceedings{vivanti2015automatic,
+  title={Automatic Liver Tumor Segmentation in Follow-Up CT Scans},
+  author={Vivanti, Refael and Ephrat, Ariel and Joskowicz, Leo and Karaaslan, Omer A and Lev Cohain, Naama and Sosna, Jacob},
+  booktitle={International Workshop on Patch-based Techniques in Medical Imaging (MICCAI)},
+  year={2015}
+}</pre>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 04 & 05. Experience & Teaching -->
+    <section class="section" id="experience" aria-label="Experience and Teaching">
+      <div class="two-col-sections">
+
+        <!-- Work Experience -->
+        <div>
+          <div class="section-header">
+            <div class="section-title-group">
+              <span class="section-numeral">04</span>
+              <h2 class="section-title">Work Experience</h2>
+            </div>
+          </div>
+
+          <div class="timeline-list">
+            <div class="timeline-entry">
+              <div class="timeline-logo-box">
+                <img src="images/gdm_logo.webp" alt="Google DeepMind logo" loading="lazy" />
+              </div>
+              <div>
+                <h3 class="timeline-org">Google DeepMind</h3>
+                <ul class="timeline-roles">
+                  <li>
+                    <span>Research Scientist</span>
+                    <span class="timeline-period">2024 – Present</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-logo-box">
+                <img src="images/google_g_logo.png" alt="Google logo" loading="lazy" />
+              </div>
+              <div>
+                <h3 class="timeline-org">Google Research</h3>
+                <ul class="timeline-roles">
+                  <li>
+                    <span>Software Engineer</span>
+                    <span class="timeline-period">2018 – 2024</span>
+                  </li>
+                  <li>
+                    <span>Software Engineering Intern</span>
+                    <span class="timeline-period">2017</span>
+                  </li>
+                  <li>
+                    <span>Software Engineering Intern, Google</span>
+                    <span class="timeline-period">2016</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-logo-box">
+                <img src="images/hereastory_logo.png" alt="Here a Story logo" loading="lazy" />
+              </div>
+              <div>
+                <h3 class="timeline-org"><a href="http://www.here-a-story.com" target="_blank" rel="noopener">Here a Story</a></h3>
+                <ul class="timeline-roles">
+                  <li>
+                    <span>Co-founder &amp; Web Developer</span>
+                    <span class="timeline-period">2013 – 2014</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teaching -->
+        <div>
+          <div class="section-header">
+            <div class="section-title-group">
+              <span class="section-numeral">05</span>
+              <h2 class="section-title">Teaching</h2>
+            </div>
+          </div>
+
+          <div class="timeline-list">
+            <div class="timeline-entry">
+              <div class="timeline-logo-box">
+                <img src="images/huji-logo.png" alt="Hebrew University of Jerusalem logo" loading="lazy" />
+              </div>
+              <div>
+                <h3 class="timeline-org">The Hebrew University of Jerusalem</h3>
+                <ul class="timeline-roles">
+                  <li>
+                    <span>TA, Digital Image Processing</span>
+                    <span class="timeline-period">2017 – 2018</span>
+                  </li>
+                  <li>
+                    <span>TA, Undergraduate Engineering Projects &amp; Workshop</span>
+                    <span class="timeline-period">2015 – 2018</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; Ariel Ephrat · Google DeepMind</span>
+    <span>Research and product highlights inspired by <a href="https://inbar-mosseri.github.io/" target="_blank" rel="noopener">Inbar Mosseri</a></span>
+  </footer>
+
+  <!-- Interactive UI Script: Theme Switcher, Email Copy, Publication Filters & BibTeX -->
+  <script>
+    (function () {
+      // 1. Theme Toggle
+      var themeBtn = document.getElementById('theme-toggle-btn');
+      if (themeBtn) {
+        themeBtn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          var next = current === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try {
+            localStorage.setItem('theme', next);
+          } catch (e) {}
+        });
+      }
+
+      function copyTextSafe(text, onDone) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(onDone).catch(function () {
+            fallbackCopy(text, onDone);
+          });
+        } else {
+          fallbackCopy(text, onDone);
+        }
+      }
+
+      function fallbackCopy(text, onDone) {
+        try {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          if (onDone) onDone();
+        } catch (e) {}
+      }
+
+      // 2. One-Click Email Copy
+      var copyEmailBtn = document.getElementById('copy-email-btn');
+      if (copyEmailBtn) {
+        copyEmailBtn.addEventListener('click', function () {
+          var addr = ['arielephrat', 'google.com'].join('@');
+          copyTextSafe(addr, function () {
+            copyEmailBtn.textContent = 'Copied';
+            copyEmailBtn.classList.add('copied');
+            setTimeout(function () {
+              copyEmailBtn.textContent = 'Copy email';
+              copyEmailBtn.classList.remove('copied');
+            }, 2000);
+          });
+        });
+      }
+
+      // 3. Publication Category Filtering
+      var filterBtns = document.querySelectorAll('.filter-btn');
+      var pubItems = document.querySelectorAll('.pub-item');
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var target = btn.getAttribute('data-filter');
+          filterBtns.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+
+          pubItems.forEach(function (item) {
+            if (target === 'all' || item.getAttribute('data-category') === target) {
+              item.removeAttribute('hidden');
+            } else {
+              item.setAttribute('hidden', '');
+            }
+          });
+        });
+      });
+
+      // 4. Expandable BibTeX Drawers + Copy
+      document.querySelectorAll('.bibtex-toggle').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var id = btn.getAttribute('data-bib');
+          var drawer = document.getElementById(id);
+          if (!drawer) return;
+          if (drawer.hasAttribute('hidden')) {
+            drawer.removeAttribute('hidden');
+          } else {
+            drawer.setAttribute('hidden', '');
+          }
+        });
+      });
+
+      document.querySelectorAll('.bibtex-copy-btn').forEach(function (copyBtn) {
+        copyBtn.addEventListener('click', function () {
+          var pre = copyBtn.parentElement.querySelector('pre');
+          if (!pre) return;
+          copyTextSafe(pre.textContent, function () {
+            copyBtn.textContent = 'Copied!';
+            setTimeout(function () {
+              copyBtn.textContent = 'Copy';
+            }, 1800);
+          });
+        });
+      });
+
+      // 5. Active Scroll Spy for Sticky Nav
+      var sections = ['about', 'highlights', 'publications', 'experience'];
+      var navMap = {};
+      sections.forEach(function (id) {
+        navMap[id] = document.getElementById('nav-' + id);
+      });
+
+      function onScroll() {
+        var scrollY = window.scrollY + 140;
+        var currentId = sections[0];
+        sections.forEach(function (id) {
+          var el = document.getElementById(id);
+          if (el && el.offsetTop <= scrollY) {
+            currentId = id;
+          }
+        });
+        sections.forEach(function (id) {
+          if (navMap[id]) {
+            navMap[id].classList.toggle('active', id === currentId);
+          }
+        });
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
 
 </body>
 </html>
-
